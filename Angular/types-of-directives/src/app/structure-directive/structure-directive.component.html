@@ -1,0 +1,36 @@
+<div>
+    <hr/>
+    <h2>Structure Directive</h2>
+    <p *ngIf="true">This is Simple Structure Directive</p>
+    <p *ngIf="false">This is Simple Structure Directive</p>
+    <p *ngIf="f1">This is Simple Structure Directive from Component Variable</p>
+    <p *ngIf="f2">This is Simple Structure Directive from Component Variable</p>
+    <hr/>
+    <input type="button" value="Click Here" (click)="fun()"/>
+    <div *ngIf="ff">
+        This is simple *ngIf Code
+    </div>
+    <br/>
+    <input type="button" [value]="b1" (click)="change()"/>
+    <div *ngIf="flag">
+        This is Simple Content
+    </div>
+    <hr/>
+    <h2>*ngFor Example</h2>
+    <ul>
+        <li *ngFor="let name of names">{{name}}</li>
+    </ul>
+    <br/>
+    <table border = "1" class="table table-bordered table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.age}}</td>
+        </tr>
+    </table>
+</div>
